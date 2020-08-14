@@ -1,5 +1,7 @@
-jquery.sumoselect
+jquery.sumoselect (FORK)
 =============
+
+__!!! Why use this fork?__ The original [jquery.sumoselect](https://github.com/HemantNegi/jquery.sumoselect) is no longer maintained. This fork just adds 2 commits on top of the latest version to fix a [XSS issue](https://github.com/HemantNegi/jquery.sumoselect/pull/288).
 
 
 jquery.sumoselect.js - A beautiful cross device Single/Multi Select jQuery Select plugin.
