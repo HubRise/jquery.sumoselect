@@ -738,12 +738,15 @@
                 },
 
                 // removes all but the selected one
-                removeAll: function () {
+                // if force argument is provided, then will be deleted selected value too
+                removeAll: function (force = false) {
                     var O = this;
                     var options = O.E.find('option');
 
+                    if (typeof force !== 'boolean') throw 'force must be a boolean value'
+
                     for (var x = (options.length - 1); x >= 0; x--) {
-                        if (options[x].selected !== true) {
+                        if (force || options[x].selected !== true) {
                             O.remove(x);
                         }
                     }
